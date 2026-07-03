@@ -1,8 +1,18 @@
 .Todo {
-    width: 380px;
+    width: 450px;
     border-radius: 20px;
     background: #1E293B;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 90%;
     padding: 25px;
+}
+
+.input-container {
+    align-items: center;
+    display: flex;
+    gap : 10px ;
 }
 
 body {
@@ -20,6 +30,7 @@ hr {
 
 h1 {
     text-align: center;
+    color: white;
 }
 
 .btn {
@@ -34,7 +45,6 @@ h1 {
     cursor: pointer;
     width: 90px;
     height: 30px;
-    display: block;
     background-color: cornflowerblue;
     border-radius: 15px;
 }
@@ -48,14 +58,30 @@ h1 {
     transition: 0.3s ease; 
 }
 
-.Todo .filters {
+ .filters {
     display: flex;
-    
+    gap : 10px ;
 }
 
-input {
-    width: 250px;
+.input-container input {
+    flex : 1 ;
     border-radius: 20px;
     outline: none;
     padding: 10px;
+}
+
+.edit {
+    width: 50px;
+}
+
+h2{
+    color : white ;
+    display: flex;
+    flex-direction: row;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
